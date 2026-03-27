@@ -20,10 +20,10 @@ const Checkout = ({ cart, placeOrder }) => {
                   <img src={item.image} alt={item.name} className="w-12 h-12 object-cover rounded" />
                   <span>{item.name} x {item.quantity}</span>
                 </div>
-                <span>${item.price * item.quantity}</span>
+                <span>PKR {item.price * item.quantity}</span>
               </div>
             ))}
-            <div className="text-right font-bold text-xl">Total: ${total}</div>
+            <div className="text-right font-bold text-xl">Total: PKR {total}</div>
           </div>
 
           {/* Checkout form */}
