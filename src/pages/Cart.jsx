@@ -18,7 +18,7 @@ const Cart = ({ cart, addToCart, removeFromCart }) => {
                 <img src={item.image} alt={item.name} className="w-16 h-16 object-cover rounded" />
                 <div>
                   <h2 className="font-semibold">{item.name}</h2>
-                  <p className="text-gray-700">${item.price} x {item.quantity}</p>
+                  <p className="text-gray-700">PKR {item.price} x {item.quantity}</p>
                 </div>
               </div>
               <div className="flex items-center space-x-2">
@@ -39,7 +39,7 @@ const Cart = ({ cart, addToCart, removeFromCart }) => {
             </div>
           ))}
           <div className="text-right text-xl font-bold mt-4">
-            Total: ${total}
+            Total: PKR {total}
           </div>
         </div>
       )}
